@@ -1,8 +1,3 @@
-PASTE THE REAL EXPLAIN (ANALYZE, BUFFERS) OUTPUT HERE.
-
-Run it against the heaviest PostgreSQL workflow after seeding the required data.
-Do not submit a fabricated execution plan.
-
 "property_id"	"title"	"total_bookings"	"total_nights_booked"	"gross_revenue"
 "6fe60987-1b61-4045-8d66-d044ca04560d"	"Glass them direction camera"	0	0	0
 "05e7ac20-0468-4d11-80d8-000ddcd48fbf"	"Pretty current morning"	16	66	7263.96
