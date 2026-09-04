@@ -17,8 +17,6 @@ NUM_REVIEWS = 30_000
 NUM_SEARCH_SESSIONS = 550_000   # > 500,000 required
 BATCH_SIZE = 10_000
 
-# A handful of city centers to cluster synthetic search pins around,
-# for more realistic geospatial distribution than pure random noise.
 CITY_CENTERS = [
     (12.9716, 77.5946),   # Bengaluru
     (19.0760, 72.8777),   # Mumbai
@@ -96,7 +94,6 @@ def seed_search_sessions(db, n):
                 "type": "Point",
                 "coordinates": [round(jlng, 6), round(jlat, 6)],  # GeoJSON: [lng, lat]
             },
-            # Skew recency so the TTL/geoNear demo has live-looking data.
             "created_at": now - timedelta(minutes=random.randint(0, 180)),
         }))
         if len(ops) >= BATCH_SIZE:
