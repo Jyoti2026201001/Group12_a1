@@ -1,13 +1,3 @@
-"""
-StaySpot :: mongo_seeder.py
-Generates mock data for PropertyAmenities, PropertyReviews, SearchSessions.
-
-Target scale:
-  - 500,000+ SearchSessions geospatial pings
-
-Uses pymongo bulk_write with InsertOne for throughput.
-"""
-
 import os
 import random
 import uuid
