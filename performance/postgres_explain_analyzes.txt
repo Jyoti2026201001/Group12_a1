@@ -1,0 +1,15 @@
+PASTE THE REAL EXPLAIN (ANALYZE, BUFFERS) OUTPUT HERE.
+
+Run it against the heaviest PostgreSQL workflow after seeding the required data.
+Do not submit a fabricated execution plan.
+
+"property_id"	"title"	"total_bookings"	"total_nights_booked"	"gross_revenue"
+"6fe60987-1b61-4045-8d66-d044ca04560d"	"Glass them direction camera"	0	0	0
+"05e7ac20-0468-4d11-80d8-000ddcd48fbf"	"Pretty current morning"	16	66	7263.96
+"9cc994b7-06c9-483b-bf5e-065c34a493d5"	"Moment increase"	0	0	0
+"65f14e4a-7e35-413d-be3c-6c9bc1cbce28"	"Artist population total"	22	89	4584.39
+"603abbcd-77b4-48cf-9908-9e549b60a110"	"Same among"	0	0	0
+
+
+"id"	"guest_id"	"property_id"	"check_in"	"check_out"	"total_cost"	"status"
+"dd562d65-977c-4dbd-90c2-6b6d7a6bdcbf"	"884939a1-548a-4c25-82a1-d83fe97bff0e"	"fb0cecdb-3c5d-42fa-abff-496f0b562174"	"2026-01-09"	"2026-02-09"	250.00	"CONFIRMED"
