@@ -1,0 +1,105 @@
+// facet
+[
+  {
+    ratingDistribution: [
+      {
+        _id: 1,
+        count: 6040
+      },
+      {
+        _id: 2,
+        count: 6042
+      },
+      {
+        _id: 3,
+        count: 5931
+      },
+      {
+        _id: 4,
+        count: 6051
+      },
+      {
+        _id: 5,
+        count: 5936
+      }
+    ],
+    topTags: [
+      {
+        _id: 'noisy',
+        count: 6386
+      },
+      {
+        _id: 'comfortable_beds',
+        count: 6370
+      },
+      {
+        _id: 'great_location',
+        count: 6350
+      },
+      {
+        _id: 'amazing_view',
+        count: 6303
+      },
+      {
+        _id: 'as_described',
+        count: 6295
+      },
+      {
+        _id: 'poor_wifi',
+        count: 6284
+      },
+      {
+        _id: 'friendly_host',
+        count: 6253
+      },
+      {
+        _id: 'clean',
+        count: 6238
+      },
+      {
+        _id: 'parking_issues',
+        count: 6230
+      },
+      {
+        _id: 'value_for_money',
+        count: 6206
+      }
+    ],
+    overallAverage: [
+      {
+        _id: null,
+        avgRating: 2.9933666666666667,
+        totalReviews: 30000
+      }
+    ]
+  }
+]
+
+// geonear
+[
+  {
+    _id: 4000,
+    session_count: 12412,
+    avg_distance_m: 4512.524821981002
+  },
+  {
+    _id: 3000,
+    session_count: 9634,
+    avg_distance_m: 3525.5869114283028
+  },
+  {
+    _id: 2000,
+    session_count: 6893,
+    avg_distance_m: 2539.0483341525514
+  },
+  {
+    _id: 1000,
+    session_count: 4101,
+    avg_distance_m: 1557.5506720047103
+  },
+  {
+    _id: 0,
+    session_count: 1422,
+    avg_distance_m: 666.3892969957219
+  }
+]
