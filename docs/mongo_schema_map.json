@@ -1,0 +1,41 @@
+{
+  "database": "stayspot",
+  "collections": {
+    "PropertyAmenities": {
+      "required": ["property_id", "house_rules", "accessibility_features"],
+      "fields": {
+        "property_id": "string",
+        "house_rules": "array<string>",
+        "accessibility_features": "array<string>",
+        "amenities": "object"
+      }
+    },
+    "PropertyReviews": {
+      "required": ["property_id", "rating", "tags", "created_at"],
+      "fields": {
+        "property_id": "string",
+        "guest_id": "string",
+        "rating": "integer 1..5",
+        "tags": "array<string>",
+        "comment": "string",
+        "created_at": "date"
+      }
+    },
+    "SearchSessions": {
+      "required": ["session_id", "location", "created_at"],
+      "fields": {
+        "session_id": "string",
+        "location": "GeoJSON Point [longitude, latitude]",
+        "created_at": "date"
+      }
+    }
+  },
+  "indexes": {
+    "SearchSessions.location": "2dsphere",
+    "SearchSessions.created_at": "TTL 7200 seconds",
+    "PropertyAmenities.property_id": "unique",
+    "PropertyReviews.property_id": "secondary",
+    "PropertyReviews.rating": "secondary",
+    "PropertyReviews.tags": "secondary"
+  }
+}
